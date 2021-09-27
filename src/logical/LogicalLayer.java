@@ -16,7 +16,7 @@ public class LogicalLayer {
     public boolean userRules(String name,String email,String mobileNo,String password)
     {
         String regex="^(?=.*[0-9])"
-                      +"(?=.*[a-z])(?=>*[A-Z])"
+                      +"(?=.*[a-z])(?=.*[A-Z])"
                       +"(?=.*[!#%?<>&*])"
                       +"(?=\\S+$).{8,20}$";
         boolean result= Pattern.matches(regex,password);
